@@ -37,8 +37,8 @@ function Passcode() {
     };
 
     return (
-        <div className="min-h-screen w-full bg-black/60 backdrop-blur-sm text-white flex items-center justify-center overflow-hidden">
-            <div className="flex flex-col items-center max-w-full">
+       <div className="min-h-[100dvh] w-full bg-black/60 backdrop-blur-sm text-white flex items-center justify-center px-4">
+            <div className="flex flex-col items-center w-full max-w-xs">
                 {/* Title */}
                 <h1 className="text-2xl font-light mb-8">{config.passcodeTitle}</h1>
 
