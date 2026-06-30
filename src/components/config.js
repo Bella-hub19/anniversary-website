@@ -19,7 +19,7 @@ const config = {
   trendingSearches: [
     "Why is my bf so cute?", // Example trending search query
     "Why does Arabella love him more?", // Another example query
-    `Arabella's birthdate (coz her bf forgets)`, // A personalized trending search
+    `Arabella's birthdate`, // A personalized trending search
   ],
   proTip: 'Pro tip: try searching "How long have we been together?" ;)', // Helpful tip for users
 
@@ -60,8 +60,8 @@ const config = {
       top: "15%",
     },
     {
-      title: "Die With A Smile",
-      artist: "Lady Gaga, Bruno Mars",
+      title: "Risk It All",
+      artist: "Bruno Mars",
       left: "15%",
       top: "40%",
     },
@@ -98,7 +98,7 @@ const config = {
   ],
 
     // 📝 Message Recap Page
-    messageTitle: "Our Messages", // Title for the messages recap page
+    messageTitle: "Our Pictures", // Title for the messages recap page
     messageGallery: [
       { title: "May 26, 2026", description: "A day I'll never forget. 🎓❤️" }, // Message entry
       { title: "May 28, 2026", description: "Some of my favorite moments are the ones spent with you. ❤️" },

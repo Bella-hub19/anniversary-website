@@ -46,6 +46,10 @@ function Closing() {
     <div className="max-w-2xl text-center text-pink-900 bg-white/20 backdrop-blur-sm rounded-3xl px-8 py-8 shadow-xl">
       <p className="whitespace-pre-line leading-9 text-lg font-medium">
         {config.closingMessage}
+
+         <p className="mt-6 text-pink-700 italic text-sm">
+         July 2, 2025 — the beginning of my favorite love story. 🤍
+        </p>
       </p>
     </div>
 
