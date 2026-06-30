@@ -6,11 +6,11 @@ const config = {
   */
 
   // 🔐 Passcode Page
-  correctPasscode: "0000", // Change this to any 4-digit code (the passcode for access)
+  correctPasscode: "0702", // Change this to any 4-digit code (the passcode for access)
   passcodeTitle: "Enter Passcode", // Title displayed on the passcode entry page
   successMessage: "Yayy!! :)", // Message shown upon successful passcode entry
   redirectMessage: "Redirecting...", // Message displayed while redirecting after success
-  incorrectPasscodeMessage: "Incorrect passcode, hint: our anniversary date!", // Message shown for incorrect passcode
+  incorrectPasscodeMessage: "Incorrect passcode, hint: our monthsary date!", // Message shown for incorrect passcode
   cancelButtonText: "Cancel", // Text for the cancel button
 
   // 🔍 Question Page
@@ -18,13 +18,13 @@ const config = {
   trendingTitle: "Trending searches", // Title for the trending searches section
   trendingSearches: [
     "Why is my bf so cute?", // Example trending search query
-    "Why does Rheina love him more?", // Another example query
-    `Rheina's birthdate (coz her bf forgets)`, // A personalized trending search
+    "Why does Arabella love him more?", // Another example query
+    `Arabella's birthdate (coz her bf forgets)`, // A personalized trending search
   ],
   proTip: 'Pro tip: try searching "How long have we been together?" ;)', // Helpful tip for users
 
   // ⏳ Timer Page
-  anniversaryDate: "2024-10-18", // 📅 Set your anniversary date here (used for the timer)
+  monthsaryDate: "2025-07-02", // 📅 Set your anniversary date here (used for the timer)
   timerTitle: "We've been together for:", // Title displayed on the timer page
   timerMessage: "... and still counting <3", // Message shown alongside the timer
   timeUnits: {
@@ -48,14 +48,14 @@ const config = {
   musicTitle: "Songs that remind me of you", // Title for the music page
   musicGallery: [
     {
-      title: "Heavenly", // Title of the song
-      artist: "Cigarettes After Sex", // Artist of the song
+      title: "Palagi", // Title of the song
+      artist: "TJ Monterde", // Artist of the song
       left: "5%", // Positioning on the page
       top: "5%", // Positioning on the page
     },
     {
-      title: "The Boy Is Mine",
-      artist: "Brandy, Monica",
+      title: "Here With Me",
+      artist: "d4vd",
       left: "40%",
       top: "15%",
     },
@@ -66,32 +66,32 @@ const config = {
       top: "40%",
     },
     {
-      title: "Last Night on Earth",
-      artist: "Green Day",
+      title: "Mine",
+      artist: "Taylor Swift",
       left: "30%",
       top: "75%",
     },
     {
-      title: "American Boy",
-      artist: "Estelle, Kanye West",
+      title: "Saksi Ang Langit",
+      artist: "December Avenue",
       left: "5%",
       top: "65%",
     },
     {
-      title: "Sparks",
-      artist: "Coldplay",
+      title: "The Only Exception",
+      artist: "Paramore",
       left: "25%",
       top: "90%",
     },
     {
-      title: "Kiss Me Thru The Phone",
-      artist: "Soulja Boy, Sammie",
+      title: "I'll Be",
+      artist: "Edwin McCain",
       left: "35%",
       top: "50%",
     },
     {
-      title: "Sunsetz",
-      artist: "Cigarettes After Sex",
+      title: "Ikaw Lang Patutunguhan",
+      artist: "Amiel Sol",
       left: "10%",
       top: "25%",
     },
@@ -100,25 +100,42 @@ const config = {
     // 📝 Message Recap Page
     messageTitle: "Our Messages", // Title for the messages recap page
     messageGallery: [
-      { title: "September 3, 2024", description: "A beautiful day to remember." }, // Message entry
-      { title: "October 5, 2024", description: "Cherishing moments together." },
-      { title: "December 25, 2024", description: "Christmas with love ❤️" },
+      { title: "May 26, 2026", description: "A day I'll never forget. 🎓❤️" }, // Message entry
+      { title: "May 28, 2026", description: "Some of my favorite moments are the ones spent with you. ❤️" },
+      { title: "April 17, 2026", description: "Distance only makes our bond stronger. ❤️" },
     ],
   
     // 📸 Picture Recap Page
     pictureTitle: "Our Pictures", // Title for the pictures recap page
     pictureGallery: [
-      { title: "January 1, 2024", description: "New Year's Celebration 🎉" }, // Picture entry
-      { title: "February 14, 2024", description: "Valentine's Day 💕" },
-      { title: "March 10, 2024", description: "Beach trip memories 🏖️" },
+      { title: "May 19, 2025", description: "The days of getting to know each other, now some of my favorite memories..💖" }, // Picture entry
+      { title: "May 07, 2025", description: "Second Time We Met💕" },
+      { title: "May 18, 2025", description: "Before us, there was this moment. ❤️" },
     ],
   
 
   // 💌 Love Letter Page
-  loveLetterMessage: "Hi, I love you so much💖", // Message displayed on the love letter page
+  loveLetterMessage: "One year down, \ncountless memories made, \nand a lifetime to go. \n\nThank you for choosing us \nevery single day. \n\nI love you always. ", // Message displayed on the love letter page
 
   // 🎇 Closing Page
-  closingMessage: "Thank you for everything, my love! 💖 Wishing us many more wonderful years together.", // Closing message displayed
+closingMessage: `Looking back at everything we've shared this past year,
+I can't help but smile.
+
+Every memory, every laugh,
+every late-night call,
+and every "I miss you"
+became something I'll always treasure.
+
+No matter how many miles separate us,
+my heart will always find its way back to you.
+
+Here's to more memories,
+more laughter,
+and someday...
+no more distance.
+
+Happy Anniversary, Je.
+I love you always. ❤️`, // Closing message displayed
 
   /* 
   ████████████████████████████████████████

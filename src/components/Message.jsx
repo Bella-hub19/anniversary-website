@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import config from './config'; // Import config file
 
 // Dynamically import only the required message images
-const imageFiles = import.meta.glob('../assets/MessageImage*.png');
+const imageFiles = import.meta.glob('../assets/MessageImage*.jpg');
 
 function Message() {
   const navigate = useNavigate();

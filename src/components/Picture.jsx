@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import config from './config'; // Import config file
 
 // Dynamically import only the required picture images
-const imageFiles = import.meta.glob('../assets/Picture*.png');
+const imageFiles = import.meta.glob('../assets/Picture*.jpg');
 
 function Picture() {
   const navigate = useNavigate();
@@ -18,8 +18,8 @@ function Picture() {
         Object.keys(imageFiles)
           .sort((a, b) => {
             // Extract the number from filenames (e.g., Picture1.png -> 1)
-            const aNum = parseInt(a.match(/Picture(\d+)\.png/)?.[1] || 0, 10);
-            const bNum = parseInt(b.match(/Picture(\d+)\.png/)?.[1] || 0, 10);
+            const aNum = parseInt(a.match(/Picture(\d+)\.jpg/)?.[1] || 0, 10);
+            const bNum = parseInt(b.match(/Picture(\d+)\.jpg/)?.[1] || 0, 10);
             return aNum - bNum; // Ensure they are sorted correctly
           })
           .slice(0, config.pictureGallery.length) // Only take as many images as needed

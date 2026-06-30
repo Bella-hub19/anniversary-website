@@ -34,17 +34,13 @@ function Letter() {
         translateZ: 250,
       });
 
-    const t2 = gsap.timeline({ paused: true });
-
     const openCard = () => {
       t1.play();
-      t2.play();
-    };
+    }
 
     const closeCard = (e) => {
       e.stopPropagation();
       t1.reverse();
-      t2.reverse();
     };
 
     const envelopeElement = envelopeRef.current;
@@ -60,39 +56,68 @@ function Letter() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center">
-      <div className="w-[90%] max-w-[400px]">
-        <div className="flex-grow flex items-center justify-center h-[400px]">
-          <div className="letter-container">
-            <div className="content">
-              <div className="envelope" ref={envelopeRef}></div>
-              <div className="letter" ref={letterRef}>
-                <div className="body">
-                  <span className="close">x</span>
-                  <div className="message">{config.loveLetterMessage}</div>
-                </div>
+
+  <div className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-100 to-pink-300 flex flex-col items-center justify-center relative overflow-hidden">
+
+
+<div className="absolute top-10 left-10 text-4xl animate-bounce">💖</div>
+<div className="absolute top-20 right-10 text-3xl animate-pulse">✨</div>
+<div className="absolute bottom-24 left-16 text-3xl animate-bounce">💕</div>
+<div className="absolute bottom-32 right-16 text-4xl animate-pulse">🌸</div>
+
+<div className="w-[90%] max-w-[400px]">
+  <div className="flex-grow flex items-center justify-center h-[500px]">
+
+    <div className="letter-container">
+      <div className="content">
+
+        <div className="envelope" ref={envelopeRef}></div>
+
+        <div className="letter" ref={letterRef}>
+          <div className="body">
+           <span className="close">❤️</span>
+
+            <div className="message">
+              <div className="text-center px-3">
+               
+              <p className="message">
+         {config.loveLetterMessage}
+          <br /><br />
+          
+              </p>
+
               </div>
             </div>
+
           </div>
         </div>
 
-        <div className="flex justify-between w-full p-6 mb-10">
-          <button
-            className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
-            onClick={() => navigate(config.recapRedirectPath)}
-          >
-            <ArrowLeft /> {config.previousPageText}
-          </button>
-          <button
-            className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
-            onClick={() => navigate(config.letterNextPage)}
-          >
-            {config.nextPageText} <ArrowRight />
-          </button>
-        </div>
       </div>
     </div>
-  );
+
+  </div>
+
+  <div className="flex justify-between w-full px-6 mt-12">
+    <button
+      className="px-4 py-2 flex justify-center items-center bg-white/30 gap-2 hover:bg-white/50 backdrop-blur-sm text-pink-700 text-sm sm:text-base border border-white rounded-lg"
+      onClick={() => navigate(config.recapRedirectPath)}
+    >
+      <ArrowLeft /> {config.previousPageText}
+    </button>
+
+    <button
+      className="px-4 py-2 flex justify-center items-center bg-white/30 gap-2 hover:bg-white/50 backdrop-blur-sm text-pink-700 text-sm sm:text-base border border-white rounded-lg"
+      onClick={() => navigate(config.letterNextPage)}
+    >
+      {config.nextPageText} <ArrowRight />
+    </button>
+  </div>
+
+</div>
+</div>
+
+);
+
 }
 
 export default Letter;

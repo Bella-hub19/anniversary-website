@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import config from "./config"; // Import config file
 
 // Dynamically import only the required music images
-const imageFiles = import.meta.glob("../assets/music/*.png");
+const imageFiles = import.meta.glob("../assets/music/*.jpg");
 
 function Music() {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ function Music() {
       const loadedImages = await Promise.all(
         config.musicGallery
           .map(async (song, index) => {
-            const imagePath = `../assets/music/${index + 1}.png`; // Ensure correct ordering from bottom to top
+            const imagePath = `../assets/music/${index + 1}.jpg`; // Ensure correct ordering from bottom to top
             if (imageFiles[imagePath]) {
               const imageModule = await imageFiles[imagePath]();
               return {

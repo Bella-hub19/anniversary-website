@@ -15,7 +15,7 @@ function Passcode() {
             if (newPasscode.length === 4) {
                 const enteredPasscode = newPasscode.join('');
                 if (enteredPasscode === config.correctPasscode) {
-                    setMessage(config.successMessage);
+                    setMessage(config.successMessage); 
                     setTimeout(() => {
                         setMessage(config.redirectMessage);
                         navigate(config.redirectPath);
